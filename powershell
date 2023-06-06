@@ -1,0 +1,23 @@
+function q { exit }
+function ~ { cd ~ }
+function to ($loc) { cd $loc }
+function dn { cd ~\Downloads }
+function dc { cd ~\Documents }
+function pc { cd ~\Pictures }
+function dk { cd ~\Desktop }
+
+function ws($name) { winget search $name }
+
+function wi($name) { winget install $name }
+
+function doit { adb shell settings put global hide_gesture_line 1  }
+function e-pw { vim "~\Documents\WindowsPowershell\Microsoft.PowerShell_profile.ps1" }
+function e-v { vim "~\_vimrc" }
+
+
+Set-Alias eth get-netadapter
+Set-Alias pw powershell
+Set-Alias c clear
+Set-Alias v vim
+
+clear
