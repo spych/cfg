@@ -5,6 +5,8 @@ alias ar="sudo apt autoremove -y && sudo apt autoclean"
 alias c="clear"
 alias q="exit"
 alias n="nvim"
+alias nv="nvim"
+alias v="vim"
 alias h="history"
 alias d="date"
 alias t="time"
@@ -15,7 +17,7 @@ alias cl="clear;ls"
 
 # Package Control--------------------------------------------------------------------------
 # Install
-alias di="sudo dpkg -iy"
+alias di="sudo dpkg -i"
 alias dr="sudo dpkg -ry"
 alias ai="sudo apt install -y"
 alias ni="sudo nala install -y"
@@ -50,7 +52,7 @@ alias e-nv="nvim ~/.config/nvim/init.vim"
 alias sl="systemctl suspend && exit"
 alias sd="systemctl poweroff"
 alias rb="systemctl reboot"
-alias lo="pkill -KILL -u juzt"
+alias lo="pkill -KILL -u $USER"
 #------------------------------------------------------------------------------------------
 
 
