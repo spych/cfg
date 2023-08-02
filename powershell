@@ -12,6 +12,8 @@ Set-Alias c clear
 Set-Alias e nvim
 Set-Alias n nvim
 Set-Alias np notepad
+Set-Alias sd stop-computer
+Set-Alias rb restart-computer
 
 
 function q { exit }
@@ -30,7 +32,7 @@ function w-i($name) { winget install $name }
 function w-r ($name) { winget remove $name }
 function w-u($name) { winget upgrade $name }
 function w-l($name) { winget list $name }
-function w-u-a { winget upgrade -all }
+function w-u-a { winget upgrade --all }
 
 
 
