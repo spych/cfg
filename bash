@@ -1,4 +1,5 @@
 # Default Aliases -------------------------------------------------------------------------
+alias rr="source ~/.bash_aliases && clear"
 alias i="sudo nala install -y"
 alias r="sudo apt --purge remove -y"
 alias ar="sudo apt autoremove -y && sudo apt autoclean"
@@ -45,9 +46,20 @@ alias dn="cd ~/Downloads"
 alias dc="cd ~/Documents"
 alias pc="cd ~/Pictures"
 alias dk="cd ~/Desktop"
+#------------------------------------------------------------------------------------------
+
+
+
+# Edit Files ------------------------------------------------------------------------------
 alias e-rc="nvim ~/.bashrc"
 alias e-al="nvim ~/.bash_aliases"
 alias e-nv="nvim ~/.config/nvim/init.vim"
+alias e-tx="nvim ~/.tmux.conf"
+alias e-wm="nvim ~/.config/awesome/rc.lua"
+alias e-al-t="nvim ~/.config/alacritty/alacritty.yml"
+alias e-pm="nvim ~/.config/picom/picom.conf"
+alias e-pb="nvim ~/.config/polybar/config"
+alias s-n-w="nitrogen --set-zoom-fill"
 #------------------------------------------------------------------------------------------
 
 
