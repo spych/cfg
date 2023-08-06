@@ -24,6 +24,7 @@ function dk { cd ~\Desktop }
 function pc { cd ~\Pictures }
 function dn { cd ~\Downloads }
 function dc { cd ~\Documents }
+function fi { cd ~\Files }
 function to ($loc) { cd $loc }
 
 

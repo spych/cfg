@@ -1,8 +1,18 @@
-# Default Aliases -------------------------------------------------------------------------
-alias rr="source ~/.bash_aliases && clear"
+
+# APT -------------------------------------------------------------------------------------
 alias i="sudo nala install -y"
 alias r="sudo apt --purge remove -y"
-alias ar="sudo apt autoremove -y && sudo apt autoclean"
+alias rc="sudo apt autoremove -y && sudo apt autoclean"
+#------------------------------------------------------------------------------------------
+
+# DNF -------------------------------------------------------------------------------------
+alias i="sudo dnf install -y"
+alias r="sudo dnf remove -y"
+alias rc="sudo dnf clean all"
+#------------------------------------------------------------------------------------------
+
+# Default Aliases -------------------------------------------------------------------------
+alias rr="source ~/.bash_aliases && clear"
 alias c="clear"
 alias q="exit"
 alias n="nvim"
@@ -17,20 +27,43 @@ alias cl="clear;ls"
 
 
 # Package Control--------------------------------------------------------------------------
-# Install
-alias di="sudo dpkg -i"
-alias dr="sudo dpkg -ry"
-alias ai="sudo apt install -y"
-alias ni="sudo nala install -y"
- 
-# Update & Upgrade 
-alias ad="sudo apt update -y"
-alias ag="sudo apt upgrade -y"
-alias agd="sudo apt upgrade -y && sudo apt update -y"
+# APT    
+alias a-i="sudo apt install"
+alias a-up="sudo apt update && sudo apt upgrade"
+alias n-i="sudo nala install"
+alias n-up="sudo nala update && sudo nala upgrade"
+alias a-li="apt list --installed"
+alias n-li="nala list installed"
+alias a-sw="apt show"
+alias n-sw="nala show"
+alias a-fu="sudo apt full-upgrade"
+alias a-a-repo="sudo add-apt-repository"
+alias a-r-repo="sudo add-apt-repository --remove"
 
-alias nd="sudo nala update"
-alias ng="sudo nala upgrade -y"
-alias ngd="sudo nala upgrade -y && sudo nala update"
+
+
+# DNF
+alias d-i="sudo dnf install"
+alias d-up="sudo apt update && sudo apt upgrade"
+alias d-r="sudo dnf remove"
+alias n-li="dnf list installed"
+alias d-sw="apt info"
+alias d-e-repo="sudo dnf config-manager --set-enabled"
+alias d-d-repo="sudo dnf config-manager --set-disable"
+  
+
+# DPKG 
+alias d--i="sudo dpkg -i"
+alias d--r="sudo dpkg -r"
+alias d--li="dpkg -l"
+alias d--sw="dpkg -s"
+
+# RPM  
+alias r--i="sudo rpm -i"
+alias r--u="sudo rpm -U"
+alias r--r="sudo rpm -e"
+alias r--li="rpm -qa"
+alias r--sw="rpm -qi"
 #------------------------------------------------------------------------------------------
 
 
@@ -46,6 +79,7 @@ alias dn="cd ~/Downloads"
 alias dc="cd ~/Documents"
 alias pc="cd ~/Pictures"
 alias dk="cd ~/Desktop"
+alias fi="cd ~/Files"
 #------------------------------------------------------------------------------------------
 
 
