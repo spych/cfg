@@ -3,6 +3,7 @@
 alias i="sudo nala install -y"
 alias r="sudo apt --purge remove -y"
 alias rc="sudo apt autoremove -y && sudo apt autoclean"
+alias up="sudo nala update && sudo nala upgrade"
 #------------------------------------------------------------------------------------------
 
 # DNF -------------------------------------------------------------------------------------
@@ -44,7 +45,7 @@ alias a-r-repo="sudo add-apt-repository --remove"
 
 # DNF
 alias d-i="sudo dnf install"
-alias d-up="sudo apt update && sudo apt upgrade"
+alias d-up="sudo dnf update && sudo dnf upgrade"
 alias d-r="sudo dnf remove"
 alias n-li="dnf list installed"
 alias d-sw="apt info"
