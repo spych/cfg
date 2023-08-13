@@ -103,6 +103,7 @@ alias e-pm="nvim ~/.config/picom/picom.conf"
 alias e-pb="nvim ~/.config/polybar/config"
 alias s-n-w="nitrogen --set-zoom-fill"
 alias g-c-cfg="git clone https://github.com/spych/cfg.git"
+
 #------------------------------------------------------------------------------------------
 
 
