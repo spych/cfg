@@ -40,32 +40,57 @@ function adb-r($name) {adb uninstall --user 0 $name}
 Set-Alias gdb "c:\Tools\ADB\uad_gui-windows"
 
 Set-Alias vmware "C:\Program Files (x86)\VMware\VMware Player\VMPlayer.exe"
+
 function touch($file) {
     "" | Out-File $file -Encoding ASCII
 }
+
 function df {
     get-volume
 }
-function sed($file, $find, $replace) {
+
+function sed($file, $find, $replace) {	
     (Get-Content $file).replace("$find", $replace) | Set-Content $file
 }
+
 function which($name) {
     Get-Command $name | Select-Object -ExpandProperty Definition
 }
+
 function grep($regex, $dir) {
-    if ( $dir ) { Get-ChildItem $dir | select-string $regex return } $input | select-string $regex
+            if ( $dir ) {
+                                    Get-ChildItem $dir | select-string $regex
+                                                                return
+                                                                                                }
+                                                                                                                                    $input | select-string $regex
 }
 function unzip ($file) {
-    Write-Output("Extracting", $file, "to", $pwd) $fullFile = Get-ChildItem -Path $pwd -Filter .\cove.zip | ForEach-Object { $_.FullName } Expand-Archive -Path $fullFile -DestinationPath $pwd
+            Write-Output("Extracting", $file, "to", $pwd)
+                        $fullFile = Get-ChildItem -Path $pwd -Filter .\cove.zip | ForEach-Object { $_.FullName }
+                                        Expand-Archive -Path $fullFile -DestinationPath $pwd
 }
+
 function find-file($name) {
-    Get-ChildItem -recurse -filter "*${name}*" -ErrorAction SilentlyContinue | ForEach-Object { $place_path = $_.directory Write-Output "${place_path}\${_}"
+                Get-ChildItem -recurse -filter "*${name}*" -ErrorAction SilentlyContinue | ForEach-Object {
+                                                        $place_path = $_.directory
+                                                                                                                        Write-Output "${place_path}\${_}"
+                                                                                                                                                                                                                        }
 }
+
 function ff($name) {
-    Get-ChildItem -recurse -filter "*${name}*" -ErrorAction SilentlyContinue | ForEach-Object { $place_path = $_.directory Write-Output "${place_path}\${_}"
+            Get-ChildItem -recurse -filter "*${name}*" -ErrorAction SilentlyContinue | ForEach-Object {
+                                                        $place_path = $_.directory
+                                                                                                                        Write-Output "${place_path}\${_}"
+                                                                                                                                                                                                                        }
 }
 
 function ll { Get-ChildItem -Path $pwd -File }
 function cd... { Set-Location ..\.. }
 function cd.... { Set-Location ..\..\.. }
 function doit { adb shell settings put global hide_gesture_line 1 }
+function c-site ($filename) { 
+    mkdir $filename
+    cp "S:\code\site\*" ".\$filename" -Recurse 
+}
+
+clear
