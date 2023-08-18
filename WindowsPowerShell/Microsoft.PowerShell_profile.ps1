@@ -3,6 +3,7 @@ Set-Alias rr powershell
 
 Set-Alias c clear
 Set-Alias e nvim
+Set-Alias nm nvim
 Set-Alias np notepad
 Set-Alias sd stop-computer
 Set-Alias rb restart-computer
@@ -29,6 +30,8 @@ function w-u-a { winget upgrade --all }
 
 function e-al { nvim $HOME\Documents\WindowsPowershell\Microsoft.PowerShell_profile.ps1 }
 function e-nv { nvim $HOME\AppData\Local\nvim\init.vim }
+function e-ml ($module) { nvim $HOME\Documents\WindowsPowershell\$module.psm1 }
+function i-ml ($module) { import-module -DisableNameChecking $HOME\Documents\WindowsPowershell\$module.psm1 }
 
 function touch($file) {
     "" | Out-File $file -Encoding ASCII
