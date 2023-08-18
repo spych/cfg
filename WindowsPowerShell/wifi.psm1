@@ -1,3 +1,4 @@
+# WiFi PowerShell Aliases
 function wifi-l { netsh wlan show profile }
 function wifi-pw ($name) 
 {
