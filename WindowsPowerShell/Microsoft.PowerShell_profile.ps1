@@ -10,6 +10,7 @@ Set-Alias rb restart-computer
 
 function ~ { cd ~ }
 function q { exit }
+function here { start . }
 function to ($loc) { cd $loc }
 
 function fi { cd ~\Files }
