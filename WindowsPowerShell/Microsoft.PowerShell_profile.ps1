@@ -1,3 +1,6 @@
+
+# Add New Aliases Above-------------------------------------------------------------
+
 Set-Alias eth get-netadapter
 Set-Alias rr powershell
 
@@ -24,6 +27,7 @@ function cd... { Set-Location ..\..\.. }
 
 function w-s ($name) { winget search $name }
 function w-i ($name) { winget install $name }
+function w-ii ($name) { winget install "$name.$name" }
 function w-r ($name) { winget remove $name }
 function w-u ($name) { winget upgrade $name }
 function w-l ($name) { winget list $name }
