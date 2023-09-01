@@ -10,6 +10,8 @@ Set-Alias nm nvim
 Set-Alias np notepad
 Set-Alias sd stop-computer
 Set-Alias rb restart-computer
+Set-Alias lnx wsl
+Set-Alias lD get-volume
 
 function ~ { cd ~ }
 function q { exit }
