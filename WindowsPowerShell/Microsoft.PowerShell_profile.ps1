@@ -1,4 +1,3 @@
-
 # Add New Aliases Above-------------------------------------------------------------
 
 Set-Alias eth get-netadapter
