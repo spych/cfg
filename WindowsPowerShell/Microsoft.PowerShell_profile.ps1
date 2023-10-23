@@ -38,6 +38,9 @@ function e-al { nvim $HOME\Documents\WindowsPowershell\Microsoft.PowerShell_prof
 function e-nv { nvim $HOME\AppData\Local\nvim\init.vim }
 function e-ml ($module) { nvim $HOME\Documents\WindowsPowershell\$module.psm1 }
 function i-ml ($module) { import-module -DisableNameChecking $HOME\Documents\WindowsPowershell\$module.psm1 }
+function c-ml ($module) { cat $HOME\Documents\WindowsPowershell\$module.psm1 }
+function doit { adb shell settings put global hide_gesture_line 1 }
+
 
 function touch($file) {
     "" | Out-File $file -Encoding ASCII
