@@ -12,6 +12,7 @@ function adb-r-a ($name) {
         "com.google.android.youtube",
         "com.google.android.googlequicksearchbox",
         "com.google.android.videos",
+        "com.google.android.contacts",
         "com.google.android.apps.safetyhub",
         "com.google.android.cellbroadcastreceiver",
         "com.google.android.cellbroadcastreceiver.overlay.miui",
