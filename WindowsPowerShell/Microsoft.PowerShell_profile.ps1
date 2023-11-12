@@ -1,3 +1,6 @@
+#(@(& '~/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe' init pwsh --config='~\AppData\Local\Programs\oh-my-posh\themes\ --theme-- .omp.json' --print) -join "`n") | Invoke-Expression
+
+
 # Add New Aliases Above-------------------------------------------------------------
 
 Set-Alias eth get-netadapter
