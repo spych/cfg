@@ -90,6 +90,7 @@ alias dn="cd ~/Downloads"
 alias dc="cd ~/Documents"
 alias pc="cd ~/Pictures"
 alias dk="cd ~/Desktop"
+alias crun='function _compile_run() { gcc -o "main" "$1".c && ./"main"; }; _compile_run'
 #------------------------------------------------------------------------------------------
 
 
